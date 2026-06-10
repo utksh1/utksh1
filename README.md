@@ -31,6 +31,12 @@ Secure backend foundation for a cybersecurity society platform using Node.js, Ex
 
 **Highlights:** JWT authentication, bcrypt password hashing, role-based access control, Zod validation, request sanitization, rate limiting, Helmet, audit logging, and protected administrative operations.
 
+### [CTF Write-ups](https://github.com/utksh1/CTF_WriteUps)
+
+Repository documenting technical solutions and analyses for 99 CTF challenges covering web exploitation, cryptography, digital forensics, reverse engineering, OSINT, binary exploitation, and network analysis.
+
+**Highlights:** detailed walk-throughs for complex tasks (like non-x86 MIPS64 ROP execution and custom LCG seed recovery), Minecraft region-save parsing with PIL-based visualization, and Supabase RLS privilege-escalation analysis.
+
 ## Security capabilities
 
 **Application Security:** Web and API security, OWASP Top 10, authentication and authorization testing, session and JWT security, input validation, rate limiting, security reporting
