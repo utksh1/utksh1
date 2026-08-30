@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Utkarsh Singh - Resume</title>
+<style>
+@page { size: A4; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a2e;
+    background: #fff;
+    font-size: 8.3pt;
+    line-height: 1.15;
+}
+.resume {
+    width: 210mm;
+    height: 297mm;
+    padding: 11mm 14mm 8mm 14mm;
+    margin: 0 auto;
+    background: #fff;
+}
+.header { width: 100%; border-bottom: 2.5px solid #1a237e; padding-bottom: 8px; margin-bottom: 8px; }
+.header-table { width: 100%; border-collapse: collapse; }
+.header-left { vertical-align: top; }
+.header-right { vertical-align: top; text-align: left; padding-left: 16px; border-left: 1.5px solid #bbb; width: 38%; }
+.name { font-size: 28pt; font-weight: 800; color: #0d1b3e; letter-spacing: 0.5px; line-height: 1.0; }
+.degree { font-size: 11pt; color: #1a237e; font-weight: 600; margin-top: 3px; }
+.university { font-size: 9.5pt; color: #222; margin-top: 1px; }
+.year { font-size: 10pt; color: #1a237e; font-weight: 600; margin-top: 1px; }
+.contact-item { margin-bottom: 3px; font-size: 8.5pt; color: #222; display: flex; align-items: center; gap: 4px; }
+.contact-item::before, .section-title::before, .skill-header::before { content: "•"; color: #1a237e; }
+.contact-item a { color: inherit; text-decoration: none; }
+.contact-item a:hover { color: #1a237e; text-decoration: underline; }
+.contact-label { color: #1a237e; font-weight: 700; }
+.main-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.left-cell { width: 58%; vertical-align: top; padding-right: 14px; }
+.right-cell { width: 40%; vertical-align: top; padding-left: 12px; border-left: 1.5px solid #ccc; }
+.section { margin-bottom: 8px; }
+.section + .section { margin-top: 5px; }
+.section-title {
+    font-size: 10.5pt; font-weight: 700; color: #1a237e;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-bottom: 5px; padding-bottom: 5px;
+    border-bottom: 1.5px solid #1a237e;
+}
+.profile-text {
+    font-size: 8.2pt; color: #333; line-height: 1.2;
+    margin-bottom: 5px;
+}
+.entry { margin-bottom: 6px; }
+.entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+.entry-title {
+    font-weight: 700; font-size: 9pt; color: #1a1a2e;
+    display: flex; align-items: baseline; gap: 4px;
+}
+.entry-title::before { content: "\2022"; font-size: 9pt; color: #1a1a2e; }
+.entry-date { font-size: 8pt; color: #333; font-weight: 600; white-space: nowrap; }
+.entry-subtitle { font-size: 8.5pt; color: #1a237e; font-weight: 600; }
+.entry-detail { font-size: 8pt; color: #444; font-style: italic; }
+.entry-bullets { list-style: none; padding-left: 0; margin-top: 2px; }
+.entry-bullets li {
+    position: relative; padding-left: 10px; margin-bottom: 2px;
+    font-size: 8pt; color: #333; line-height: 1.18;
+}
+.entry-bullets li::before { content: "\2013"; position: absolute; left: 0; color: #333; }
+.edu-header { display: flex; justify-content: space-between; align-items: baseline; }
+.edu-gpa { color: #1a237e; font-weight: 700; font-size: 9.5pt; }
+.edu-year { text-align: right; font-size: 8pt; color: #333; margin-top: 1px; }
+.project-title {
+    font-weight: 700; font-size: 9pt; color: #1a237e;
+    display: flex; align-items: baseline; gap: 4px;
+}
+.project-title::before { content: "\2022"; font-size: 9pt; color: #1a1a2e; }
+.project-title a { color: inherit; text-decoration: none; }
+.project-link { font-size: 7pt; font-weight: 600; white-space: nowrap; }
+.project-link:hover { text-decoration: underline; }
+.project-tech { font-size: 7.5pt; color: #555; font-style: italic; padding-left: 12px; }
+.skill-category { margin-bottom: 4px; }
+.skill-header {
+    font-size: 9pt; font-weight: 700; color: #1a1a2e; margin-bottom: 2px;
+}
+.skill-tags { display: flex; flex-wrap: wrap; gap: 2px; padding-left: 13px; }
+.skill-tag {
+    background: #e8eaf6; color: #1a237e;
+    padding: 1px 5px; border-radius: 8px;
+    font-size: 7pt; font-weight: 500; white-space: nowrap;
+}
+.skill-divider { border: none; border-top: 0.5px solid #ccc; margin: 5px 0; }
+.achievement-item {
+    display: flex; align-items: flex-start; gap: 4px;
+    margin-bottom: 2px; font-size: 8pt; color: #333; line-height: 1.15;
+}
+.achievement-item::before { content: "\2022"; color: #1a1a2e; font-size: 7pt; margin-top: 1px; flex-shrink: 0; }
+.cert-item {
+    position: relative; padding-left: 6px;
+    font-size: 7.5pt; color: #333; line-height: 1.2;
+    margin-bottom: 2px;
+}
+.cert-item::before { content: "•"; position: absolute; left: 0; color: #0d2d68; }
+.certificate-list { display: block; }
+.cert-issuer { color: #1a237e; font-weight: 600; }
+.cert-date { color: #666; font-size: 7pt; }
+</style>
+<base target="_blank">
+</head>
+<body>
+<div class="resume">
+<div class="header">
+<table class="header-table"><tr>
+<td class="header-left">
+<div class="name">UTKARSH SINGH</div>
+<div class="degree">B.Tech CSE &amp; AI</div>
+<div class="university">Rishihood University</div>
+</td>
+<td class="header-right">
+<div class="contact-item"><span class="contact-label">Phone:</span><a href="tel:+918604047389">+91-8604047389</a></div>
+<div class="contact-item"><span class="contact-label">Email:</span><a href="mailto:utkarshsingh60101@gmail.com">utkarshsingh60101@gmail.com</a></div>
+<div class="contact-item"><span class="contact-label">GitHub:</span><a href="https://github.com/utksh1">github.com/utksh1</a></div>
+<div class="contact-item"><span class="contact-label">LinkedIn:</span><a href="https://www.linkedin.com/in/utksh">linkedin.com/in/utksh</a></div>
+<div class="contact-item"><span class="contact-label">Portfolio:</span><a href="https://utksh.in">utksh.in</a></div>
+</td>
+</tr></table>
+</div>
+<table class="main-table"><tr>
+<td class="left-cell">
+
+<div class="section">
+<div class="section-title">Summary</div>
+<div class="profile-text">
+<strong>CS &amp; AI undergraduate</strong>, <em>cybersecurity by choice</em>. Explores <strong>web and API vulnerabilities</strong>, sharpens security instincts through <strong>CTF competitions</strong>, and documents reproducible findings for responsible verification.
+</div>
+</div>
+
+<div class="section">
+<div class="section-title">Education</div>
+<div class="entry">
+<div class="edu-header"><span class="entry-title">Rishihood University</span><span class="edu-gpa">SGPA: 8.09</span></div>
+<div class="entry-detail">B.Tech in Computer Science and Artificial Intelligence</div>
+<div class="edu-year">2025 – 2029</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Experience</div>
+<div class="entry">
+<div class="entry-header"><span class="entry-title">Malaviya National Institute of Technology Jaipur</span><span class="entry-date">Jul 2026 – Present</span></div>
+<div class="entry-subtitle">Application Security Intern</div>
+<ul class="entry-bullets">
+<li>Working on <strong>Android security testing</strong>, analyzing Android application components and platform-level components for potential security issues.</li>
+<li>Performing <strong>kernel fuzzing</strong> and security testing of native and userspace libraries to identify crashes, vulnerabilities, and unexpected behavior.</li>
+<li>Working with the <strong>Android HAL</strong> and other Android platform components, conducting security-focused testing across different layers of the Android stack.</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><span class="entry-title">Cyberops Infosec LLP</span><span class="entry-date">Jun 2026 – Aug 2026</span></div>
+<div class="entry-subtitle">Web Security Intern</div>
+<ul class="entry-bullets">
+<li>Worked on <strong>web application security testing</strong>, security audits, and black-box audits.</li>
+<li>Performed security assessments based on the <strong>OWASP Top 10</strong> and SANS Top 25, focusing on identifying and validating common web vulnerabilities.</li>
+<li>Worked with <strong>honeypot technologies</strong> and explored offensive security techniques as part of practical security testing.</li>
+</ul>
+</div>
+<div class="entry">
+<div class="entry-header"><span class="entry-title">Amdox Technologies, Anekal, Karnataka</span><span class="entry-date">Nov 2025 – Jan 2026</span></div>
+<div class="entry-subtitle">Web Developer</div>
+<ul class="entry-bullets">
+<li>Developed <strong>Rust-based web applications</strong> and backend services using Actix Web, focusing on modular and maintainable server-side architecture.</li>
+<li>Built and integrated <strong>REST APIs</strong>, handling request validation, routing, data processing, and structured error handling.</li>
+<li>Worked on application reliability through <strong>defensive programming</strong>, reusable components, and robust API handling.</li>
+</ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Projects</div>
+<div class="entry">
+<div class="project-title"><a href="https://github.com/utksh1/Whispr" rel="noopener noreferrer">Whispr — Client-Side Encrypted Messaging Platform</a><a class="project-link" href="https://github.com/utksh1/Whispr" rel="noopener noreferrer">[GitHub]</a></div>
+<div class="project-tech">Next.js, Web Crypto API, Supabase Auth, PostgreSQL, Realtime</div>
+<ul class="entry-bullets">
+<li>Implemented browser-side <strong>ECDH P-256</strong> key agreement and <strong>AES-GCM</strong> authenticated encryption with ciphertext-only message persistence.</li>
+<li>Designed <strong>local keyring management</strong>, encrypted private-key backups, key-version tracking, and participant-scoped database access.</li>
+</ul>
+</div>
+<div class="entry">
+<div class="project-title"><a href="https://github.com/utksh1/SecuScan" rel="noopener noreferrer">SecuScan — Local-First Security Scanning Workspace</a><a class="project-link" href="https://github.com/utksh1/SecuScan" rel="noopener noreferrer">[GitHub]</a></div>
+<div class="project-tech">FastAPI, React, TypeScript, Docker, PostgreSQL/SQLite, Redis</div>
+<ul class="entry-bullets">
+<li>Designed a <strong>metadata-driven plugin system</strong> with safety classification, consent-aware tasks, integrity checks, audit events, and normalized findings.</li>
+<li>Unified capability, network, rate, timeout, and concurrency controls across CLI, Python, and Docker-oriented scan execution.</li>
+<li>Structured scan output for <strong>severity-based review</strong>, evidence collection, report generation, and manual validation of automated findings.</li>
+</ul>
+</div>
+<div class="entry">
+<div class="project-title"><a href="https://github.com/utksh1/game-dev-open-world" rel="noopener noreferrer">Open World Game Engine</a><a class="project-link" href="https://github.com/utksh1/game-dev-open-world" rel="noopener noreferrer">[GitHub]</a></div>
+<div class="project-tech">C++17, SDL2, Metal 3.0, CMake</div>
+<ul class="entry-bullets">
+<li>Built a modular open-world game engine with a <strong>Metal-based 3D renderer</strong> featuring PBR lighting, skybox rendering, and frustum culling.</li>
+<li>Implemented <strong>custom physics</strong>, FPS/TPS character controllers, vehicle physics, and gameplay systems for movement and interaction.</li>
+<li>Added <strong>chunk-based world streaming</strong> with distance-based LOD, A* pathfinding, behavior-driven NPCs, dynamic traffic, missions, inventory, weapons, and binary save/load systems.</li>
+</ul>
+</div>
+</div>
+</td>
+<td class="right-cell">
+<div class="section">
+<div class="section-title">Skills</div>
+<div class="skill-category">
+<div class="skill-header">Security</div>
+<div class="skill-tags">
+<span class="skill-tag">Android Security</span><span class="skill-tag">Android Application Components</span><span class="skill-tag">Android HAL</span><span class="skill-tag">Kernel Fuzzing</span><span class="skill-tag">Native &amp; Userspace Fuzzing</span><span class="skill-tag">Web Security</span><span class="skill-tag">OWASP Top 10</span><span class="skill-tag">SANS Top 25</span><span class="skill-tag">VAPT</span><span class="skill-tag">Offensive Security</span><span class="skill-tag">Vulnerability Assessment</span>
+</div>
+</div>
+<hr class="skill-divider">
+<div class="skill-category">
+<div class="skill-header">Languages</div>
+<div class="skill-tags">
+<span class="skill-tag">C</span><span class="skill-tag">Rust</span><span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Bash/Shell</span>
+</div>
+</div>
+<hr class="skill-divider">
+<div class="skill-category">
+<div class="skill-header">Frameworks</div>
+<div class="skill-tags">
+<span class="skill-tag">Actix Web</span><span class="skill-tag">Axum</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Node.js</span><span class="skill-tag">Express</span><span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+</div>
+</div>
+<hr class="skill-divider">
+<div class="skill-category">
+<div class="skill-header">Databases</div>
+<div class="skill-tags">
+<span class="skill-tag">PostgreSQL</span><span class="skill-tag">MariaDB</span><span class="skill-tag">SQLite</span><span class="skill-tag">Redis</span><span class="skill-tag">Neo4j</span><span class="skill-tag">Qdrant</span>
+</div>
+</div>
+<hr class="skill-divider">
+<div class="skill-category">
+<div class="skill-header">Tools</div>
+<div class="skill-tags">
+<span class="skill-tag">Syzkaller</span><span class="skill-tag">ADB</span><span class="skill-tag">GDB</span><span class="skill-tag">LLDB</span><span class="skill-tag">Frida</span><span class="skill-tag">Ghidra</span><span class="skill-tag">IDA Pro</span><span class="skill-tag">Burp Suite</span><span class="skill-tag">Metasploit</span><span class="skill-tag">Nmap</span><span class="skill-tag">Wireshark</span><span class="skill-tag">Nuclei</span><span class="skill-tag">ffuf</span><span class="skill-tag">Gobuster</span><span class="skill-tag">OWASP ZAP</span><span class="skill-tag">T-Pot</span><span class="skill-tag">Cowrie</span><span class="skill-tag">Dionaea</span><span class="skill-tag">OpenCanary</span><span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span class="skill-tag">Linux</span>
+</div>
+</div>
+<hr class="skill-divider">
+<div class="skill-category">
+<div class="skill-header">Concepts</div>
+<div class="skill-tags">
+<span class="skill-tag">Computer Networking</span><span class="skill-tag">REST APIs</span><span class="skill-tag">API Security</span><span class="skill-tag">Application Security</span><span class="skill-tag">Fuzzing</span><span class="skill-tag">Authentication</span><span class="skill-tag">Authorization</span><span class="skill-tag">Session Security</span><span class="skill-tag">Business Logic Testing</span><span class="skill-tag">Security Reporting</span>
+</div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Certificates</div>
+<div class="certificate-list">
+<div class="cert-item">OWASP Top 10 — <span class="cert-issuer">Packt</span> <span class="cert-date">(Jul 2026)</span></div>
+<div class="cert-item">Advanced Cybersecurity Techniques — <span class="cert-issuer">Johns Hopkins</span> <span class="cert-date">(Jun 2026)</span></div>
+<div class="cert-item">Rust Programming and DevOps — <span class="cert-issuer">Duke University</span> <span class="cert-date">(Jun 2026)</span></div>
+<div class="cert-item">Certified in Cybersecurity (CC) — <span class="cert-issuer">ISC2</span> <span class="cert-date">(May 2026)</span></div>
+<div class="cert-item">Network &amp; Network Security — <span class="cert-issuer">Google</span> <span class="cert-date">(Apr 2026)</span></div>
+<div class="cert-item">Web Application Security — <span class="cert-issuer">Microsoft</span> <span class="cert-date">(Apr 2026)</span></div>
+<div class="cert-item">AWS Cloud Security Foundations — <span class="cert-issuer">AWS</span> <span class="cert-date">(Mar 2026)</span></div>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Achievements</div>
+<div class="achievement-item">Project Admin &amp; Open-Source Contributor, GirlScript Summer of Code (GSSoC) 2025 – 2026</div>
+<div class="achievement-item">Top 10 in Various National and International Cybersecurity Competitions</div>
+</div>
+</td>
+</tr></table>
+</div>
+</body>
+</html>
